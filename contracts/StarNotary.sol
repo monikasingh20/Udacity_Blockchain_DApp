@@ -18,8 +18,8 @@ contract StarNotary is ERC721 {
     function name(uint _tokenId) public view returns (string memory){
            return tokenIdToStarInfo[_tokenId].name;
     }
-    function symbol(uint _tokenId) public view returns (string memory){
-        return tokenIdToStarInfo[_tokenId].name;
+    function symbol() public view returns (string memory){
+        return "ETH";
     }
 
     // mapping the Star with the Owner Address

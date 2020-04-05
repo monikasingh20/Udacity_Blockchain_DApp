@@ -82,7 +82,7 @@ it('can add the star name and star symbol properly', async() => {
     let instance = await StarNotary.deployed();
     await instance.createStar('Awesome Star8!', tokenId, {from: accounts[0]})
     assert.equal(await instance.name.call(tokenId), 'Awesome Star8!')
-    assert.equal(await instance.symbol.call(tokenId), 'Awesome Star8!')
+    assert.equal(await instance.symbol.call(), 'ETH')
 
 });
 
